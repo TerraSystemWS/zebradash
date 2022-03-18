@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "imagens_de_destaques",
+  "info": {
+    "singularName": "imagens-de-destaque",
+    "pluralName": "imagens-de-destaques",
+    "displayName": "Imagens de Destaques"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "destaque": {
+      "type": "boolean"
+    }
+  }
+}

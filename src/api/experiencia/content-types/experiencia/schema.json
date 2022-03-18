@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiencias",
+  "info": {
+    "singularName": "experiencia",
+    "pluralName": "experiencias",
+    "displayName": "Experiencia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "richtext"
+    },
+    "preco_uni": {
+      "type": "float"
+    },
+    "local": {
+      "type": "string"
+    },
+    "distancia": {
+      "type": "decimal"
+    },
+    "elevacao": {
+      "type": "decimal"
+    },
+    "duracao": {
+      "type": "decimal"
+    },
+    "linguas": {
+      "type": "string"
+    },
+    "imagens": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::like.like",
+      "mappedBy": "experiencia"
+    },
+    "comentarios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comentario.comentario",
+      "mappedBy": "experiencia"
+    }
+  }
+}

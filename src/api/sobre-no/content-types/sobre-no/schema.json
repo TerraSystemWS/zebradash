@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "sobre_nos",
+  "info": {
+    "singularName": "sobre-no",
+    "pluralName": "sobre-nos",
+    "displayName": "SobreNos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "conteudo_pt": {
+      "type": "richtext"
+    },
+    "conteudo_en": {
+      "type": "richtext"
+    },
+    "conteudo_fr": {
+      "type": "richtext"
+    }
+  }
+}
