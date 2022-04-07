@@ -4,7 +4,8 @@
   "info": {
     "singularName": "imagens-de-destaque",
     "pluralName": "imagens-de-destaques",
-    "displayName": "Imagens de Destaques"
+    "displayName": "Imagens de Destaques",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,12 @@
       "type": "string"
     },
     "images": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "destaque": {
       "type": "boolean"
